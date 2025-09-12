@@ -8,30 +8,30 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { number: "15+", label: "Years of Maritime Excellence" },
+    { number: "15+", label: "Years of Sea Success" },
     { number: "200+", label: "Luxury Transformations" },
     { number: "50+", label: "Bespoke Yacht Interiors" },
-    { number: "98%", label: "Client Satisfaction Rate" },
+    { number: "98%", label: "Client Retention Rate" },
   ];
 
   const values = [
     {
       icon: "✨",
-      title: "Artisan Excellence",
+      title: "Details in Design",
       description:
-        "Every detail is meticulously crafted to exceed the highest standards of luxury and sophistication",
+        "Every detail is meticulously crafted to exceed the highest standards of luxury with utmost precision",
     },
     {
       icon: "🤝",
-      title: "Partnership Legacy",
+      title: "Trust in Brands",
       description:
-        "We forge enduring relationships built on trust, transparency, and shared vision for maritime luxury",
+        "Every brand that we represent is built on immense trust and transparency to deliver your dream",
     },
     {
       icon: "🎯",
-      title: "Innovation Mastery",
+      title: "Belief in Innovation",
       description:
-        "Pioneering design solutions that seamlessly blend cutting-edge technology with timeless elegance",
+        "Every product solution is seamlessly blended using innovative techniques and cutting-edge technology",
     },
   ];
 
@@ -51,16 +51,16 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl font-bold text-gray-900 mb-6"
           >
-            About
+            Elegance beyond Excellence
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed"
           >
-            Where artistry meets maritime excellence. We transform luxury yachts into 
-            personalized sanctuaries that reflect your unique vision and elevate every moment at sea.
+            We transform luxury yachts into custom spaces to elevate every
+            moment for you and yours spend at the sea.
           </motion.p>
         </motion.div>
 
@@ -73,22 +73,28 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">Crafting Excellence at Sea</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-8">
+              Crafting the ease of Cruising
+            </h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Born from a passion for maritime luxury and architectural innovation, COZ CRUISE 
-              has redefined yacht interior design for over 15 years. We don't just create spaces—we 
-              curate experiences that seamlessly blend sophisticated aesthetics with functional excellence.
+              Born from a passion for maritime luxury and architectural
+              innovation, we have redefined yacht interior design for over 15
+              years. We don't just create spaces—we curate experiences that
+              seamlessly blend sophisticated aesthetics with functional
+              excellence.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Our philosophy centers on understanding that your yacht is more than a vessel; it's your 
-              floating residence, entertainment sanctuary, and personal retreat. Every project begins with 
-              your story, translating your lifestyle and dreams into bespoke interiors that stand the test of time.
+              Our philosophy centers on understanding that your yacht is more
+              than a vessel; it's your floating residence, entertainment
+              sanctuary, and personal retreat. Every project begins with your
+              story, translating your lifestyle and dreams into bespoke
+              interiors that stand the test of time.
             </p>
             <div className="bg-gradient-to-r from-[#288EC2]/10 to-[#288EC2]/5 rounded-2xl p-8 border-l-4 border-[#288EC2]">
               <p className="text-lg text-gray-700 leading-relaxed font-medium italic">
-                "Excellence isn't just our standard—it's our signature. From the initial concept sketch 
-                to the final installation, we ensure every detail reflects uncompromising quality and 
-                timeless elegance."
+                "Excellence isn't just our standard—it's our signature. From the
+                initial concept to the final cruise, we ensure every detail with
+                uncompromising quality and timely delivery."
               </p>
             </div>
           </motion.div>
@@ -125,9 +131,12 @@ const About = () => {
           transition={{ duration: 0.8, delay: 1.4 }}
           className="text-center mb-12"
         >
-          <h3 className="text-4xl font-bold text-gray-900 mb-8">Our Foundation</h3>
-          <p className="text-xl text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
-            Three pillars that anchor our commitment to transforming your maritime dreams into extraordinary reality
+          <h3 className="text-4xl font-bold text-gray-900 mb-8">
+            Our Commitment
+          </h3>
+          <p className="text-xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed">
+            Three pillars that anchor our commitment to transforming your
+            maritime dreams come true.
           </p>
         </motion.div>
 

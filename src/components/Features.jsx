@@ -11,17 +11,17 @@ const Features = () => {
   const features = [
     {
       number: "01",
-      title: "Design Consultation",
+      title: "Assistance to Designers",
       description: "Bespoke interior solutions for every yacht",
     },
     {
       number: "02",
-      title: "Premium Products",
+      title: "Products Selection",
       description: "Only the finest finishes and craftsmanship",
     },
     {
       number: "03",
-      title: "Rapid Refurbishment",
+      title: "Rapid Refinement",
       description: "On time worldwide delivery from the direct source",
     },
     {

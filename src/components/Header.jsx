@@ -52,7 +52,6 @@ const Header = () => {
               >
                 <a href="#home" className="text-gray-700 hover:text-[#288EC2] transition-colors font-medium text-sm xl:text-base">Home</a>
                 <a href="#about" className="text-gray-700 hover:text-[#288EC2] transition-colors font-medium text-sm xl:text-base">About</a>
-                <a href="#portfolio" className="text-gray-700 hover:text-[#288EC2] transition-colors font-medium text-sm xl:text-base">Portfolio</a>
                 <a href="#services" className="text-gray-700 hover:text-[#288EC2] transition-colors font-medium text-sm xl:text-base">Services</a>
                 <a href="#contact" className="text-gray-700 hover:text-[#288EC2] transition-colors font-medium text-sm xl:text-base">Contact</a>
               </motion.nav>
@@ -66,7 +65,7 @@ const Header = () => {
                 whileTap={{ scale: 0.95 }}
                 className="hidden md:inline-flex bg-[#288EC2] text-white px-4 lg:px-6 py-2 lg:py-3 rounded-lg hover:bg-[#1a6b96] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl text-sm lg:text-base"
               >
-                Get Quote
+                Partner With Us
               </motion.button>
 
               {/* Mobile menu button */}
@@ -113,13 +112,6 @@ const Header = () => {
                       About
                     </a>
                     <a 
-                      href="#portfolio" 
-                      className="block px-4 py-2 text-gray-700 hover:text-[#288EC2] hover:bg-gray-50 rounded-lg transition-colors font-medium"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Portfolio
-                    </a>
-                    <a 
                       href="#services" 
                       className="block px-4 py-2 text-gray-700 hover:text-[#288EC2] hover:bg-gray-50 rounded-lg transition-colors font-medium"
                       onClick={() => setIsMobileMenuOpen(false)}
@@ -138,7 +130,7 @@ const Header = () => {
                         className="w-full bg-[#288EC2] text-white py-3 rounded-lg hover:bg-[#1a6b96] transition-colors font-semibold shadow-lg"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        Get Quote
+                        Partner With Us
                       </button>
                     </div>
                   </div>

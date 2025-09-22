@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import footerYachtNight from "../assets/images/footer-yacht-night.png";
+import cozClubLogo from "../assets/images/coz_club.png";
 
 const Footer = () => {
   const ref = useRef(null);
@@ -29,24 +30,25 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-20"
         >
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl font-bold mb-4 leading-tight"
+            className="text-3xl font-bold mb-8 leading-tight"
           >
-            Ready to Set Sail?
+            Get Set Sail?
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto"
           >
-            Contact us today to book your perfect yacht experience
-          </motion.p>
+            Connect with us to explore professional partnership opportunities in
+            luxury yachting
+          </motion.p> */}
         </motion.div>
 
         {/* Links sections */}
@@ -54,7 +56,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 justify-items-center"
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -89,10 +91,18 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/privacy-policy"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Contact
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/terms-conditions"
+                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  Terms & Conditions
                 </a>
               </li>
             </ul>
@@ -107,76 +117,42 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="#service-brand-representation"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Yacht Charter
+                  Brand Representation
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service-procurement-management"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Interior Design
+                  Procurement Management
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service-product-selection"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Refurbishment
+                  Product Selection
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service-logistics-management"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Maintenance
-                </a>
-              </li>
-            </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1 }}
-          >
-            <h3 className="text-xl font-bold mb-6 text-white">Social Links</h3>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  Facebook
+                  Logistics Management
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service-shared-services"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Twitter/X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  Instagram
+                  Shared Services
                 </a>
               </li>
             </ul>
@@ -191,15 +167,32 @@ const Footer = () => {
             <div className="space-y-4 text-gray-300">
               <p className="flex items-center gap-3">
                 <span className="text-[#288EC2]">📧</span>
-                <span>info@cozcruise.com</span>
+                <a
+                  href="mailto:info@cozcruise.com"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  info@cozcruise.com
+                </a>
               </p>
               <p className="flex items-center gap-3">
                 <span className="text-[#288EC2]">📞</span>
-                <span>+1 (555) 123-4567</span>
+                <a
+                  href="tel:+15551234567"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  +1 (555) 123-4567
+                </a>
               </p>
               <p className="flex items-center gap-3">
                 <span className="text-[#288EC2]">📍</span>
-                <span>Miami, Florida</span>
+                <a
+                  href="https://maps.google.com/?q=Miami,Florida"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  Miami, Florida
+                </a>
               </p>
             </div>
           </motion.div>
@@ -216,25 +209,26 @@ const Footer = () => {
             <p className="text-gray-400">
               © 2025 COZ CRUISE. All rights reserved.
             </p>
-            <div className="flex space-x-8">
+            <div className="flex items-center space-x-3">
+              <span className="text-white font-bold text-2xl">A</span>
               <a
-                href="#"
-                className="text-gray-400 hover:text-[#288EC2] transition-colors duration-300"
+                href="https://www.cozclub.com"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Terms & Conditions
+                <img
+                  src={cozClubLogo}
+                  alt="COZ CLUB Logo"
+                  className="h-8 w-auto hover:opacity-80 transition-opacity duration-300"
+                />
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-[#288EC2] transition-colors duration-300"
-              >
-                Privacy Policy
-              </a>
+              <span className="text-white font-bold text-2xl">Company</span>
             </div>
           </div>
         </motion.div>
 
         {/* Floating decorative elements */}
-        <motion.div
+        {/* <motion.div
           animate={{ y: [0, -10, 0], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           // className="absolute top-20 left-20 w-2 h-2 bg-white/30 rounded-full"
@@ -258,7 +252,7 @@ const Footer = () => {
             delay: 0.5,
           }}
           className="absolute bottom-32 left-16 w-1.5 h-1.5 bg-[#288EC2] rounded-full"
-        ></motion.div>
+        ></motion.div> */}
       </div>
     </footer>
   );

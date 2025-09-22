@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import Portfolio from "./components/Portfolio";
 import InteriorGallery from "./components/InteriorGallery";
 import Services from "./components/Services";
+import Logistics from "./components/Logistics";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -16,11 +17,12 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Features />
+      <Services />
+      {/* <Logistics /> */}
       {/* <Portfolio /> */}
       {/* <InteriorGallery /> */}
-      <Services />
       {/* <Testimonials /> */}
+      {/* Logistic Management */}
       <Contact />
       <Footer />
     </div>

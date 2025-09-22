@@ -8,30 +8,33 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { number: "15+", label: "Years of Sea Success" },
-    { number: "200+", label: "Luxury Transformations" },
-    { number: "50+", label: "Bespoke Yacht Interiors" },
-    { number: "98%", label: "Client Retention Rate" },
+    { number: "Extensive", label: "Industry Experience" },
+    { number: "Trusted", label: "Brand Relationships" },
+    { number: "Dedicated", label: "Professional Support" },
+    { number: "Proven", label: "Track Record" },
   ];
 
   const values = [
     {
-      icon: "✨",
-      title: "Details in Design",
+      icon: "⭐",
+      color: "#F37E3A",
+      title: "Innovative Approach",
       description:
-        "Every detail is meticulously crafted to exceed the highest standards of luxury with utmost precision",
+        "Our commitment to the highest standards of quality and professionalism drives every aspect of our business relationships and brand representation",
     },
     {
       icon: "🤝",
-      title: "Trust in Brands",
+      color: "#288EC2",
+      title: "Integrity Always",
       description:
-        "Every brand that we represent is built on immense trust and transparency to deliver your dream",
+        "We build lasting partnerships through transparent communication, honest dealings, and unwavering commitment to our professional relationships",
     },
     {
-      icon: "🎯",
-      title: "Belief in Innovation",
+      icon: "🧭",
+      color: "#6EBD49",
+      title: "Industry Knowledge",
       description:
-        "Every product solution is seamlessly blended using innovative techniques and cutting-edge technology",
+        "Deep understanding of the yachting industry allows us to anticipate needs, provide valuable insights, and deliver solutions that truly matter",
     },
   ];
 
@@ -51,7 +54,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl font-bold text-gray-900 mb-6"
           >
-            Elegance beyond Excellence
+            Club of Yacht Decor Brands
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -59,8 +62,12 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed"
           >
-            We transform luxury yachts into custom spaces to elevate every
-            moment for you and yours spend at the sea.
+            We partner with best brands to deliver exceptional yacht decor
+            solutions, <br />
+            <span>
+              combining innovative design philosophy with meticulous attention
+              to product details.
+            </span>
           </motion.p>
         </motion.div>
 
@@ -73,28 +80,26 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">
-              Crafting the ease of Cruising
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">
+              Your Trusted Partner in Luxury Yachting
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Born from a passion for maritime luxury and architectural
-              innovation, we have redefined yacht interior design for over 15
-              years. We don't just create spaces—we curate experiences that
-              seamlessly blend sophisticated aesthetics with functional
-              excellence.
+            <p className="text-lg text-gray-600 leading-relaxed mb-6 text-justify justify-center">
+              Our team has sound experience in yachting interiors, partnering
+              with best brands to deliver exceptional solutions. We represent
+              luxury brands that craft premium items for yachts, facilitating
+              seamless collaboration between manufacturers and yacht designers.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Our philosophy centers on understanding that your yacht is more
-              than a vessel; it's your floating residence, entertainment
-              sanctuary, and personal retreat. Every project begins with your
-              story, translating your lifestyle and dreams into bespoke
-              interiors that stand the test of time.
+            <p className="text-lg text-gray-600 leading-relaxed mb-6 text-justify justify-center">
+              We understand the unique requirements of yacht designers and
+              provide comprehensive support including in-person meetings, expert
+              product specification, sample coordination, detailed quotations,
+              and dedicated after-sales service to ensure project success.
             </p>
             <div className="bg-gradient-to-r from-[#288EC2]/10 to-[#288EC2]/5 rounded-2xl p-8 border-l-4 border-[#288EC2]">
-              <p className="text-lg text-gray-700 leading-relaxed font-medium italic">
-                "Excellence isn't just our standard—it's our signature. From the
-                initial concept to the final cruise, we ensure every detail with
-                uncompromising quality and timely delivery."
+              <p className="text-lg text-gray-700 leading-relaxed font-medium italic text-justify justify-center">
+                "We facilitate seamless partnerships between luxury brands and
+                yacht designers, ensuring every project meets the highest
+                standards of quality and service excellence."
               </p>
             </div>
           </motion.div>
@@ -132,11 +137,11 @@ const About = () => {
           className="text-center mb-12"
         >
           <h3 className="text-4xl font-bold text-gray-900 mb-8">
-            Our Commitment
+            Our Approach
           </h3>
-          <p className="text-xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed">
-            Three pillars that anchor our commitment to transforming your
-            maritime dreams come true.
+          <p className="text-xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed">
+            The fundamental values that define who we are and how we conduct
+            business in the luxury yachting industry.
           </p>
         </motion.div>
 
@@ -148,9 +153,12 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 1.6 + index * 0.2 }}
               whileHover={{ scale: 1.05 }}
-              className="text-center bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="text-center bg-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
-              <div className="w-20 h-20 bg-[#288EC2]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div
+                className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md"
+                style={{ backgroundColor: `${value.color}15` }}
+              >
                 <span className="text-4xl">{value.icon}</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-4">

@@ -87,7 +87,7 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-white text-gray-900 px-6 sm:px-12 py-3 sm:py-4 rounded-full hover:bg-gray-100 hover:shadow-2xl transition-all duration-300 font-bold text-base sm:text-lg inline-flex items-center gap-2 sm:gap-3 group shadow-2xl"
           >
-            Design Your Dream
+            Partner With Us
             <span className="transform group-hover:translate-x-3 transition-transform duration-300 text-xl">
               ⚓
             </span>

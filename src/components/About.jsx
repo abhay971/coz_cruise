@@ -52,9 +52,9 @@ const About = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl font-bold text-gray-900 mb-6"
           >
-            Club of Yacht Decor Brands
+            CLUB of Yacht Decor Brands
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

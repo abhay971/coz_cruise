@@ -61,6 +61,45 @@ const Footer = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 1.1 }}
+          >
+            <h3 className="text-xl font-bold mb-6 text-white">Contact Info</h3>
+            <div className="space-y-4 text-gray-300">
+              <p className="flex items-center gap-3">
+                <span className="text-[#288EC2]">📧</span>
+                <a
+                  href="mailto:info@cozcruise.com"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  info@cozcruise.com
+                </a>
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="text-[#288EC2]">📞</span>
+                <a
+                  href="tel:+15551234567"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  +1 (555) 123-4567
+                </a>
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="text-[#288EC2]">📍</span>
+                <a
+                  href="https://maps.google.com/?q=Miami,Florida"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#288EC2] transition-colors duration-300"
+                >
+                  Miami, Florida
+                </a>
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
@@ -120,7 +159,7 @@ const Footer = () => {
                   href="#service-brand-representation"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Brand Representation
+                  Shared Services
                 </a>
               </li>
               <li>
@@ -128,7 +167,7 @@ const Footer = () => {
                   href="#service-procurement-management"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Procurement Management
+                  Product Selection
                 </a>
               </li>
               <li>
@@ -136,7 +175,7 @@ const Footer = () => {
                   href="#service-product-selection"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Product Selection
+                  Brand Representation
                 </a>
               </li>
               <li>
@@ -152,49 +191,10 @@ const Footer = () => {
                   href="#service-shared-services"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Shared Services
+                  Procurement Management
                 </a>
               </li>
             </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.1 }}
-          >
-            <h3 className="text-xl font-bold mb-6 text-white">Contact Info</h3>
-            <div className="space-y-4 text-gray-300">
-              <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📧</span>
-                <a
-                  href="mailto:info@cozcruise.com"
-                  className="hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  info@cozcruise.com
-                </a>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📞</span>
-                <a
-                  href="tel:+15551234567"
-                  className="hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  +1 (555) 123-4567
-                </a>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📍</span>
-                <a
-                  href="https://maps.google.com/?q=Miami,Florida"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  Miami, Florida
-                </a>
-              </p>
-            </div>
           </motion.div>
         </motion.div>
 

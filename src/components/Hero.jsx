@@ -57,7 +57,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1.2 }}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-none mb-8 tracking-tight"
               >
-                LUXURY REFINED
+                LUXURY REDEFINED
               </motion.h1>
             </div>
           </motion.div>
@@ -88,7 +88,10 @@ const Hero = () => {
             className="bg-white text-gray-900 px-6 sm:px-4 py-3 sm:py-4 rounded-full hover:bg-gray-100 hover:shadow-2xl transition-all duration-300 font-bold text-base sm:text-lg inline-flex items-center gap-2 sm:gap-3 group shadow-2xl"
           >
             Partner With Us
-            <span className="transform group-hover:translate-x-3 transition-transform duration-300 text-xl" style={{color: '#2563eb'}}>
+            <span
+              className="transform group-hover:translate-x-3 transition-transform duration-300 text-xl"
+              style={{ color: "#2563eb" }}
+            >
               ⚓
             </span>
           </motion.button>

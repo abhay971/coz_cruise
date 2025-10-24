@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer
       ref={ref}
-      className="relative bg-gray-900 text-white py-12 overflow-hidden"
+      className="relative bg-gray-900 text-white py-8 sm:py-12 overflow-hidden"
     >
       {/* Background with yacht */}
       <div className="absolute inset-0">
@@ -30,13 +30,13 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl font-bold mb-8 leading-tight"
+            className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 leading-tight"
           >
             Get Set Sail?
           </motion.h2>
@@ -56,26 +56,33 @@ const Footer = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 justify-items-center"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-8 mb-8 sm:mb-10 md:mb-12 justify-items-start md:justify-items-center"
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.1 }}
+            className="w-full"
           >
-            <h3 className="text-xl font-bold mb-6 text-white">Contact Info</h3>
-            <div className="space-y-4 text-gray-300">
-              <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📧</span>
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-white">
+              Contact Info
+            </h3>
+            <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-300">
+              <p className="flex items-start sm:items-center gap-3">
+                <span className="text-[#288EC2] flex-shrink-0 text-lg sm:text-xl">
+                  📧
+                </span>
                 <a
                   href="mailto:info@cozcruise.com"
-                  className="hover:text-[#288EC2] transition-colors duration-300"
+                  className="hover:text-[#288EC2] transition-colors duration-300 break-all"
                 >
                   info@cozcruise.com
                 </a>
               </p>
               <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📞</span>
+                <span className="text-[#288EC2] flex-shrink-0 text-lg sm:text-xl">
+                  📞
+                </span>
                 <a
                   href="tel:+15551234567"
                   className="hover:text-[#288EC2] transition-colors duration-300"
@@ -84,7 +91,9 @@ const Footer = () => {
                 </a>
               </p>
               <p className="flex items-center gap-3">
-                <span className="text-[#288EC2]">📍</span>
+                <span className="text-[#288EC2] flex-shrink-0 text-lg sm:text-xl">
+                  📍
+                </span>
                 <a
                   href="https://maps.google.com/?q=Miami,Florida"
                   target="_blank"
@@ -101,23 +110,18 @@ const Footer = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
+            className="w-full"
           >
-            <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-white">
+              Quick Links
+            </h3>
+            <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base">
               <li>
                 <a
                   href="#home"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
                   Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
-                >
-                  About
                 </a>
               </li>
               <li>
@@ -130,18 +134,19 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/privacy-policy"
+                  href="#about"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Privacy Policy
+                  About Us
                 </a>
               </li>
+
               <li>
                 <a
-                  href="/terms-conditions"
+                  href="#contact"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Terms & Conditions
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -151,28 +156,30 @@ const Footer = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.9 }}
+            className="w-full"
           >
-            <h3 className="text-xl font-bold mb-6 text-white">Services</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-white">
+              Services
+            </h3>
+            <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base">
               <li>
                 <a
-                  href="#service-brand-representation"
+                  href="#service-shared-services"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
                   Shared Services
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
-                  href="#service-procurement-management"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
                   Product Selection
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="#service-product-selection"
+                  href="#service-brand-representation"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
                   Brand Representation
@@ -188,7 +195,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#service-shared-services"
+                  href="#service-procurement-management"
                   className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300"
                 >
                   Procurement Management
@@ -203,14 +210,33 @@ const Footer = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="border-t border-gray-700 pt-8"
+          className="border-t border-gray-700 pt-6 sm:pt-8"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400">
-              © 2025 COZ CRUISE. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-3">
-              <span className="text-white font-bold text-2xl">A</span>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-center sm:text-left">
+              <p className="text-gray-400 text-xs sm:text-sm">
+                © 2025 COZ CRUISE. All rights reserved.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-gray-300 text-xs sm:text-sm">
+                <a
+                  href="/privacy-policy"
+                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300 whitespace-nowrap"
+                >
+                  Privacy Policy
+                </a>
+                <span className="hidden sm:inline">•</span>
+                <a
+                  href="/terms-conditions"
+                  className="text-gray-300 hover:text-[#288EC2] transition-colors duration-300 whitespace-nowrap"
+                >
+                  Terms & Conditions
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <span className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+                A
+              </span>
               <a
                 href="https://www.cozclub.com"
                 target="_blank"
@@ -219,10 +245,12 @@ const Footer = () => {
                 <img
                   src={cozClubLogo}
                   alt="COZ CLUB Logo"
-                  className="h-8 w-auto hover:opacity-80 transition-opacity duration-300"
+                  className="h-6 sm:h-8 w-auto hover:opacity-80 transition-opacity duration-300"
                 />
               </a>
-              <span className="text-white font-bold text-2xl">Company</span>
+              <span className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+                Company
+              </span>
             </div>
           </div>
         </motion.div>

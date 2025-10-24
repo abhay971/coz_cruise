@@ -4,7 +4,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import brandRepresentation from "../assets/images/Brand Representation.png";
 import procurementManagement from "../assets/images/Procurement Management.png";
-import productSelection from "../assets/images/Product Selection.png";
 import logisticManagement from "../assets/images/Logistic Management Service.png";
 import afterSalesSupport from "../assets/images/After Sales Support.png";
 
@@ -31,14 +30,6 @@ const Services = () => {
     },
     {
       id: "03",
-      title: "Product Selection",
-      description:
-        "Expert guidance in selecting the right products and materials for the yacht projects with access to premium brands and detailed specification support.",
-      image: productSelection,
-      gradient: "from-gray-200 via-gray-300 to-gray-400",
-    },
-    {
-      id: "04",
       title: "Logistics Management",
       description:
         "Comprehensive logistics coordination including warehousing, shipping, customs clearance, and delivery management for yacht projects with multi-supplier requirements and global reach.",
@@ -46,7 +37,7 @@ const Services = () => {
       gradient: "from-gray-200 via-gray-300 to-gray-400",
     },
     {
-      id: "05",
+      id: "04",
       title: "Shared Services",
       description:
         "Cost-effective shared back-office support services for yacht professionals, including administrative coordination, operational support, and required compliance.",

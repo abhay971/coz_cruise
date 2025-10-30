@@ -100,10 +100,9 @@ const Categories = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Categories
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We specialize in sourcing and trading premium products across 12
-            distinct categories, each carefully curated to meet the highest
-            standards of luxury and quality.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Each category is carefully curated to meet the highest standards of
+            luxury.
           </p>
         </motion.div>
 
@@ -123,7 +122,7 @@ const Categories = () => {
             >
               <Card
                 heading={category.name}
-                description={category.description}
+                // description={category.description}
                 imgSrc={category.imgSrc}
               />
             </motion.div>

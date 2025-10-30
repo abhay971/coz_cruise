@@ -44,7 +44,7 @@ const letterVariants = {
 
 const AnimatedLetter = ({ letter }) => {
   return (
-    <div className="inline-block h-[40px] overflow-hidden font-semibold text-2xl">
+    <div className="inline-block h-[36px] overflow-hidden font-semibold text-2xl">
       <motion.span
         className="flex min-w-[4px] flex-col"
         style={{ y: "0%" }}

@@ -98,20 +98,20 @@ const Services = () => {
                 We connect luxury brands with yacht designers through expert
                 representation and dedicated support.
               </p>
-              <div className="flex items-center justify-center gap-8 text-sm text-gray-500 font-medium">
+              <div className="flex items-center justify-center gap-8 text-sm text-gray-700 font-medium">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#F37E3A] rounded-full"></div>
-                  <span>Brand Partnerships</span>
+                  <span>Industry Expertise</span>
                 </div>
                 <div className="w-px h-4 bg-gray-300"></div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#288EC2] rounded-full"></div>
-                  <span>Professional Support</span>
+                  <span> Brand Partnerships</span>
                 </div>
                 <div className="w-px h-4 bg-gray-300"></div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#6EBD49] rounded-full"></div>
-                  <span>Industry Expertise</span>
+                  <span>Professional Support</span>
                 </div>
               </div>
             </motion.div>
@@ -123,7 +123,7 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              id={`service-${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+              id={`service-${service.title.toLowerCase().replace(/\s+/g, "-")}`}
               initial={{ opacity: 0, y: 80 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 + 0.6 }}

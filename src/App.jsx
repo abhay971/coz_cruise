@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import Portfolio from "./components/Portfolio";
 import InteriorGallery from "./components/InteriorGallery";
 import Services from "./components/Services";
+import Categories from "./components/Categories";
 import Logistics from "./components/Logistics";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Categories />
       <Services />
       {/* <Logistics /> */}
       {/* <Portfolio /> */}

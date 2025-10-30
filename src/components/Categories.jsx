@@ -12,7 +12,7 @@ import FurnitureImg from "../assets/categories/Furniture.png";
 import BedLinenImg from "../assets/categories/Bedlinen.png";
 import BathwareImg from "../assets/categories/Bathware.png";
 import KitchenwareImg from "../assets/categories/Kitchenware.png";
-import BathFittingsImg from "../assets/categories/Bathfittings.png";
+import AppliancesImg from "../assets/categories/Appliances.png";
 import WallCoveringsImg from "../assets/categories/WallCoverings.png";
 import AntiquesImg from "../assets/categories/Antiques.png";
 
@@ -71,9 +71,9 @@ const Categories = () => {
       imgSrc: KitchenwareImg,
     },
     {
-      name: "Bath Fittings",
-      description: "Premium marine-grade bath fittings and fixtures",
-      imgSrc: BathFittingsImg,
+      name: "Appliances",
+      description: "Premium marine-grade appliances for yacht luxury",
+      imgSrc: AppliancesImg,
     },
     {
       name: "Wall Coverings",

@@ -32,8 +32,8 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed"
           >
-            We partner with selected brands to deliver exceptional yacht decor
-            solutions, <br />
+            We only partner with brands who stands for excellence in delivering
+            exceptional yacht decor solutions, <br />
             <span>
               combining innovative design philosophy with meticulous attention
               to product detail.

@@ -34,11 +34,11 @@ const Categories = () => {
       imgSrc: FabricsImg,
     },
     {
-      name: "Flooring",
-      description:
-        "Durable and elegant flooring solutions for marine environments",
-      imgSrc: FlooringImg,
+      name: "Leather",
+
+      imgSrc: PlantersImg,
     },
+
     {
       name: "Lighting",
       description:
@@ -46,9 +46,10 @@ const Categories = () => {
       imgSrc: LightingImg,
     },
     {
-      name: "Planters",
-      description: "Curated planters bringing natural elegance to your yacht",
-      imgSrc: PlantersImg,
+      name: "Flooring",
+      description:
+        "Durable and elegant flooring solutions for marine environments",
+      imgSrc: FlooringImg,
     },
     {
       name: "Furniture",

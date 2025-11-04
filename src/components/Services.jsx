@@ -98,7 +98,7 @@ const Services = () => {
                 We connect luxury brands with yacht designers through expert
                 representation and dedicated support.
               </p>
-              <div className="flex items-center justify-center gap-8 text-sm text-gray-700 font-medium">
+              {/* <div className="flex items-center justify-center gap-8 text-sm text-gray-700 font-medium">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#F37E3A] rounded-full"></div>
                   <span>Industry Expertise</span>
@@ -113,7 +113,7 @@ const Services = () => {
                   <div className="w-2 h-2 bg-[#6EBD49] rounded-full"></div>
                   <span>Professional Support</span>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.div>
@@ -154,7 +154,7 @@ const Services = () => {
                 </p>
 
                 {/* Service highlights */}
-                <div className="space-y-3 mb-8">
+                {/* <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-gray-700">
                     <div className="w-1.5 h-1.5 bg-[#F37E3A] rounded-full"></div>
 
@@ -168,7 +168,7 @@ const Services = () => {
                     <div className="w-1.5 h-1.5 bg-[#6EBD49] rounded-full"></div>
                     <span className="font-medium">Professional Service</span>
                   </div>
-                </div>
+                </div> */}
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}

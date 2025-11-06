@@ -87,7 +87,7 @@ const Footer = () => {
                   href="tel:+15551234567"
                   className="hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  +1 46995 51244
+                  +39 34864 31861
                 </a>
               </p>
               <p className="flex items-center gap-3">
@@ -100,7 +100,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-[#288EC2] transition-colors duration-300"
                 >
-                  Miami, Florida
+                  Ripa di Porta Ticinese 125 <br /> 20143, Milan <br /> Italy
                 </a>
               </p>
             </div>
